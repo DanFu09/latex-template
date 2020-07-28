@@ -1,0 +1,90 @@
+\documentclass[11pt]{article}
+
+% Recommended, but optional, packages for figures and better typesetting:
+\usepackage{microtype}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{booktabs} % for professional tables
+\usepackage{amssymb}
+\usepackage{bm}
+\usepackage{bbm}
+\usepackage{amsmath}  % Define \boldsymbol (in amsbsy too) and align
+\usepackage{amsthm}
+\usepackage{xcolor}
+\usepackage{textcomp}
+\usepackage{multirow}
+\usepackage{mathtools}
+\usepackage[margin=1in]{geometry}
+
+\usepackage{tikz}
+\usetikzlibrary{arrows}
+\usetikzlibrary{positioning}
+
+\tikzset{
+  treenode/.style = {align=center, inner sep=0pt, text centered,
+    font=\sffamily},
+  arn_n/.style = {treenode, circle, black, font=\sffamily\bfseries, draw=black,
+    fill=white, text width=1.5em},% arbre rouge noir, noeud noir
+  arn_r/.style = {treenode, circle, black, font=\sffamily\bfseries, draw=black,
+    fill=white, text width=1.0em},% arbre rouge noir, noeud rouge
+  arn_x/.style = {treenode, rectangle, draw=black,
+    minimum width=0.5em, minimum height=0.5em}% arbre rouge noir, nil
+}
+
+\usepackage{hyperref}
+
+% Attempt to make hyperref and algorithmic work together better:
+\newcommand{\theHalgorithm}{\arabic{algorithm}}
+
+
+% bolded matirx
+\usepackage{bm}
+\usepackage{enumitem}
+
+\newcommand*{\ShowNotes}{}
+\input{macros.tex}
+\newif\ifarxiv
+
+\title{Paper Title}
+
+\author{}
+
+\date{}
+
+\begin{document}
+
+\maketitle
+
+% for compiling before there's content
+\nocite{*}
+
+\begin{abstract}
+  \input{sections/abstract}
+\end{abstract}
+
+\input{sections/intro}
+\input{sections/overview}
+\input{sections/model}
+\input{sections/theory}
+\input{sections/exp}
+\input{sections/related}
+\input{sections/conc}
+
+\ifarxiv
+\input{sections/ack}
+\fi
+
+\bibliographystyle{plain}
+\bibliography{main}
+
+\appendix
+
+% \input{sections/supp_frontmatter}
+% \input{sections/supp_related}
+% \input{sections/supp_glossary}
+% \input{sections/supp_alg}
+% \input{sections/supp_proofs}
+% \input{sections/supp_exp}
+
+
+\end{document}

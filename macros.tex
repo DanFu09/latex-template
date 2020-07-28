@@ -1,0 +1,130 @@
+\newcommand{\yell}[1]{\textcolor{red}{#1}}
+% \newcommand{\assume}[1]{\textcolor{blue}{\textbf{#1}}}
+\newcommand{\assume}[1]{#1}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem{corollary}{Corollary}
+\newtheorem{observation}{Observation}
+\newtheorem{definition}{Definition}
+\newtheorem{example}{Example}
+\newtheorem{proposition}{Proposition}
+
+%% OPERATORS:
+\newcommand{\norm}[1]{\left|\left|#1\right|\right|}
+\newcommand{\argmin}[2]{\textrm{argmin}_{#1}~#2}
+\newcommand{\argmax}[2]{\textrm{argmax}_{#1}~#2}
+% Inner product
+\newcommand{\ip}[2]{\left\langle#1, #2\right\rangle}
+% Trace
+\newcommand{\tr}{\textrm{tr}}
+% Expected value
+\newcommand{\E}[2]{\mathbb{E}_{#1}\left[#2\right]}
+% Sample mean
+\newcommand{\Ehat}[1]{\hat{\mathbb{E}}\left[#1\right]}
+% Variance
+\newcommand{\Var}[2]{\textrm{Var}_{#1}\left[#2\right]}
+% Covariance
+\newcommand{\Cov}[2]{\textrm{\textbf{Cov}}_{#1}\left[#2\right]}
+% Indicator
+\newcommand{\ind}[1]{\mathbbm{1}\left\{#1\right\}}
+\newcommand{\indpm}[1]{\mathbbm{1}^{\pm}\left\{#1\right\}}
+% sech
+\newcommand{\sech}[0]{\textrm{sech}}
+% diag
+\newcommand{\diagm}[1]{\textrm{diagm}\left(#1\right)}
+% supp
+\newcommand{\supp}{\text{supp}}
+% independent
+\newcommand\independent{\protect\mathpalette{\protect\independenT}{\perp}}
+\def\independenT#1#2{\mathrel{\rlap{$#1#2$}\mkern2mu{#1#2}}}
+
+%\newenvironment{bsmallmatrix}
+%  {\left[\begin{smallmatrix}}
+%  {\end{smallmatrix}\right]}
+
+
+%% VARIABLES:
+% See Glossary of Symbols (Appendix A.1)
+\newcommand{\x}[0]{X}
+\newcommand{\p}[0]{\mathcal{P}}
+\newcommand{\y}[0]{Y}
+\newcommand{\lf}[0]{\lambda}
+\newcommand{\lfc}[0]{\Lambda}
+\newcommand{\acc}[0]{\alpha}
+
+
+
+% LF outputs
+\newcommand{\lx}[0]{\lambda}
+% Observed LF outputs
+\newcommand{\lfo}[0]{\bar{\lf}}
+\newcommand{\lxo}[0]{\bar{\lx}}
+
+% see line at top of main file to show/hide notes
+\ifdefined\ShowNotes
+  \newcommand{\colornote}[3]{{\color{#1}\bf{#2 #3}\normalfont}}
+\else
+  \newcommand{\colornote}[3]{}
+\fi
+
+\definecolor{darkred}{rgb}{0.7,0.1,0.1}
+\definecolor{darkgreen}{rgb}{0.1,0.5,0.1}
+\definecolor{cyan}{rgb}{0.7,0.0,0.7}
+\definecolor{dblue}{rgb}{0.2,0.2,0.8}
+\definecolor{maroon}{rgb}{0.76,.13,.28}
+\definecolor{burntorange}{rgb}{0.81,.33,0}
+\definecolor{royalpurple}{rgb}{0.47,.31,0.66}
+
+% \newcommand {\note}[1]{\colornote{maroon}{}{#1}}
+\newcommand {\todo}[1]{\colornote{cyan}{TODO}{#1}}
+\newcommand {\dan}[1]{\colornote{darkgreen}{DF:}{#1}}
+\newcommand {\fred}[1]{\colornote{burntorange}{FS:}{#1}}
+\newcommand {\mayee}[1]{\colornote{red}{MC:}{#1}}
+
+% not a colornote since we don't want these to ever be removed from the document
+\ifdefined\ShowNotes
+  \newcommand{\num}[1]{{\color{red}\bf{#1}\normalfont}}
+\else
+  \newcommand{\num}[1]{#1}
+\fi
+
+\newcommand{\sysx}{\textsc{FlyingSquid}}
+\newcommand{\avgspeedupdugong}{\num{2,300}}
+\newcommand{\maxspeedupdugong}{\num{4,000}}
+\newcommand{\avgspeedupdp}{\num{235}}
+\newcommand{\maxspeedupdp}{\num{348}}
+\newcommand{\avgspeedupdpbench}{\num{170}}
+\newcommand{\maxspeedupdpbench}{\num{440}}
+\newcommand{\avgspeedupdpbenchround}{\num{170}}
+\newcommand{\maxspeedupdpbenchround}{\num{440}}
+\newcommand{\avgslowdowndugongdp}{\num{9.5}}
+
+\newcommand{\avglifttsall}{\num{13.4}}
+\newcommand{\maxlifttsall}{\num{29.3}}
+\newcommand{\avgliftmvall}{\num{14.7}}
+\newcommand{\maxliftmvall}{\num{33.9}}
+\newcommand{\avgliftts}{\num{12.4}}
+\newcommand{\maxliftts}{\num{25.2}}
+\newcommand{\avgliftmv}{\num{16.7}}
+\newcommand{\maxliftmv}{\num{33.9}}
+\newcommand{\avgliftdp}{\num{28.9}}
+\newcommand{\maxliftdp}{\num{83.2}}
+\newcommand{\avgliftdugong}{\num{1.1}}
+\newcommand{\maxliftdugong}{\num{2.5}}
+\newcommand{\avgliftdpbench}{\num{2.3}}
+\newcommand{\maxliftdpbench}{\num{4.9}}
+\newcommand{\avglifttsonline}{\num{19.8}}
+\newcommand{\maxlifttsonline}{\num{36.5}}
+\newcommand{\avgliftmvonline}{\num{8.9}}
+\newcommand{\maxliftmvonline}{\num{15.7}}
+
+\newcommand{\spam}{\textbf{Spam}}
+\newcommand{\spouse}{\textbf{Spouse}}
+\newcommand{\weather}{\textbf{Weather}}
+\newcommand{\recommender}{\textbf{Recommender}}
+\newcommand{\interview}{\textbf{Interview}}
+\newcommand{\commercial}{\textbf{Commercial}}
+\newcommand{\tennis}{\textbf{Tennis Rally}}
+\newcommand{\basketball}{\textbf{Basketball}}
+% \newcommand{\shot}{\textbf{Shot Detection}}
