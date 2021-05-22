@@ -43,6 +43,13 @@
 %  {\left[\begin{smallmatrix}}
 %  {\end{smallmatrix}\right]}
 
+% see line at top of main file to show/hide notes
+\ifdefined\ShowNotes
+  \newcommand{\colornote}[3]{{\color{#1}\bf{#2 #3}\normalfont}}
+\else
+  \newcommand{\colornote}[3]{}
+\fi
+
 \definecolor{darkred}{rgb}{0.7,0.1,0.1}
 \definecolor{darkgreen}{rgb}{0.1,0.5,0.1}
 \definecolor{cyan}{rgb}{0.7,0.0,0.7}
