@@ -3,4 +3,4 @@ LaTeX starting template
 
 # Branches
 Branches have templates for common conferences:
-1. [ICLR](/DanFu09/tree/iclr)
+1. [ICLR](/DanFu09/latex-template/tree/iclr)
