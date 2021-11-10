@@ -4,3 +4,4 @@ LaTeX starting template
 # Branches
 Branches have templates for common conferences:
 1. [ICLR](https://github.com/DanFu09/latex-template/tree/iclr)
+2. [AAAI](https://github.com/DanFu09/latex-template/tree/aaai)
