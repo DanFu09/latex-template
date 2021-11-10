@@ -1,9 +1,31 @@
-\documentclass[11pt]{article}
+% AAAI format
+\def\year{2022}\relax
+%File: formatting-instructions-latex-2022.tex
+%release 2022.1
+\documentclass[letterpaper]{article} % DO NOT CHANGE THIS
+\usepackage{aaai22}  % DO NOT CHANGE THIS
+\usepackage{times}  % DO NOT CHANGE THIS
+\usepackage{helvet}  % DO NOT CHANGE THIS
+\usepackage{courier}  % DO NOT CHANGE THIS
+\usepackage[hyphens]{url}  % DO NOT CHANGE THIS
+\usepackage{graphicx} % DO NOT CHANGE THIS
+\urlstyle{rm} % DO NOT CHANGE THIS
+\def\UrlFont{\rm}  % DO NOT CHANGE THIS
+\usepackage{natbib}  % DO NOT CHANGE THIS AND DO NOT ADD ANY OPTIONS TO IT
+\usepackage{caption} % DO NOT CHANGE THIS AND DO NOT ADD ANY OPTIONS TO IT
+\DeclareCaptionStyle{ruled}{labelfont=normalfont,labelsep=colon,strut=off} % DO NOT CHANGE THIS
+\frenchspacing  % DO NOT CHANGE THIS
+\setlength{\pdfpagewidth}{8.5in}  % DO NOT CHANGE THIS
+\setlength{\pdfpageheight}{11in}  % DO NOT CHANGE THIS
+
 \pdfoutput=1
+
+% \documentclass[11pt]{article}
+% \pdfoutput=1
 
 % Recommended, but optional, packages for figures and better typesetting:
 \usepackage{microtype}
-\usepackage{graphicx}
+% \usepackage{graphicx}
 \usepackage{subfigure}
 \usepackage{booktabs} % for professional tables
 \usepackage{amssymb}
@@ -15,7 +37,7 @@
 \usepackage{textcomp}
 \usepackage{multirow}
 \usepackage{mathtools}
-\usepackage[margin=1in]{geometry}
+% \usepackage[margin=1in]{geometry}
 
 \usepackage{tikz}
 \usetikzlibrary{arrows}
@@ -71,7 +93,6 @@
 \input{sections/ack}
 \fi
 
-\bibliographystyle{plain}
 \bibliography{main}
 
 \appendix
