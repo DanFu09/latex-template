@@ -1,4 +1,22 @@
-\documentclass[11pt]{article}
+\documentclass{uai2022} % for initial submission
+% \documentclass[accepted]{uai2022} % after acceptance, for a revised
+                                    % version; also before submission to
+                                    % see how the non-anonymous paper
+                                    % would look like
+%% There is a class option to choose the math font
+% \documentclass[mathfont=ptmx]{uai2022} % ptmx math instead of Computer
+                                         % Modern (has noticable issues)
+% \documentclass[mathfont=newtx]{uai2022} % newtx fonts (improves upon
+                                          % ptmx; less tested, no support)
+% NOTE: Only keep *one* line above as appropriate, as it will be replaced
+%       automatically for papers to be published. Do not make any other
+%       change above this note for an accepted version.
+
+%% Choose your variant of English; be consistent
+\usepackage[american]{babel}
+% \usepackage[british]{babel}
+
+% \documentclass[11pt]{article}
 \pdfoutput=1
 
 % Recommended, but optional, packages for figures and better typesetting:
@@ -15,7 +33,8 @@
 \usepackage{textcomp}
 \usepackage{multirow}
 \usepackage{mathtools}
-\usepackage[margin=1in]{geometry}
+% \usepackage[margin=1in]{geometry}
+\usepackage{geometry}
 
 \usepackage{tikz}
 \usetikzlibrary{arrows}
@@ -48,7 +67,37 @@
 
 \title{Paper Title}
 
-\author{}
+% The standard author block has changed for UAI 2022 to provide
+% more space for long author lists and allow for complex affiliations
+%
+% All author information is authomatically removed by the class for the
+% anonymous submission version of your paper, so you can already add your
+% information below.
+%
+% Add authors
+\author[1]{\href{mailto:<jj@example.edu>?Subject=Your UAI 2022 paper}{Jane~J.~von~O'L\'opez}{}}
+\author[1]{Harry~Q.~Bovik}
+\author[1,2]{Further~Coauthor}
+\author[3]{Further~Coauthor}
+\author[1]{Further~Coauthor}
+\author[3]{Further~Coauthor}
+\author[3,1]{Further~Coauthor}
+% Add affiliations after the authors
+\affil[1]{%
+    Computer Science Dept.\\
+    Cranberry University\\
+    Pittsburgh, Pennsylvania, USA
+}
+\affil[2]{%
+    Second Affiliation\\
+    Address\\
+    …
+}
+\affil[3]{%
+    Another Affiliation\\
+    Address\\
+    …
+  }
 
 \date{}
 
