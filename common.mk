@@ -67,7 +67,7 @@ $(ARXIV_NAME).pdf: $(ARXIV_TEXFILE) $(TEXFILES) $(TEXMACRO_FILE) $(BIBFILE)
 	pdflatex ${PDFLATEX_FLAGS} $(basename $@)
 
 clean:
-	@rm -rf *.aux *.bbl *.log *.dvi *.blg *.ps *.bak *~ *.toc *.lot *.lof *.out *.fdb_latexmk *.fls *.synctex.gz $(NAME).pdf $(SUPPLEMENTAL_NAME).pdf
+	@rm -rf *.aux *.bbl *.log *.dvi *.blg *.ps *.bak *~ *.toc *.lot *.lof *.out *.fdb_latexmk *.fls *.synctex.gz $(NAME).pdf $(SUPPLEMENTAL_NAME).pdf $(ARXIV_NAME).pdf
 
 spell: $(SPELL)
 
