@@ -5,3 +5,6 @@
 **.log
 **.out
 **.DS_Store
+**.fdb_latexmk
+**.fls
+**.synctex.gz
